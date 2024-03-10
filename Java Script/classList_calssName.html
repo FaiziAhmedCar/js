@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ClassName_classList</title>
+    <style>
+
+        .cRed{
+            color: red;
+            /* color: white; */
+        }
+        .bcRed{
+            background-color: red;
+        }
+
+        .cYellow{
+            color: yellow;
+            /* color:white; */
+        }
+        .bcYellow{
+            background-color: yellow;
+        }
+        .cBlack{
+            color: black;
+        }
+        .bcBlack{
+            background-color: black;
+            /* color: white; */
+        }
+    </style>
+</head>
+<body>
+    <div id="first"  >
+        <span>he I'am good</span>
+    </div>
+</body>
+
+<script>
+    let b=['cRed bcYellow','bcRed cYellow','cYellow bcBlack','cBlack bcYellow','bcRed cBlack', 'cRed bcBlack','cYellow bcBlack', 'cBlack bcYellow' ]
+    let a= Math.floor( Math.random()*b.length)
+    first.className = b[a];
+
+    first.classList.remove('bcBlack');
+    console.log(first.classList);
+</script>
+</html>

@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Insertion</title>
+</head>
+<body>
+    <div class="container">
+        <div id="first" >hi I'am already exist</div>
+    </div>
+</body>
+<script>
+    let a=document.getElementsByTagName("div")[0]
+    let div=document.createElement(`div`)
+    div.innerHTML=`<h1>hello world , I'am incerted</h1>`
+    a.appendChild(div)
+
+    let div2=document.createElement(`div`)
+    div2.innerHTML= `<h2>I'am incerted 2</h2>`
+    document.body.appendChild(div2)
+
+</script>
+</html>

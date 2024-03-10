@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>DOM</title>
+    <style>
+        *{
+            padding: 0;
+            margin: 0;
+        }
+        nav{
+            display: flex;
+            background-color: aqua;
+            border-radius: 5px;
+            height: 30px;
+            width:auto;
+        }
+        nav li{
+            list-style:none;
+            padding: 5px 23px;
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <li>HOME</li>
+        <li>ABOUT</li>
+        <li>BLOG</li>
+        <li>CONTACT</li>
+    </nav>
+    <script>
+        document.getElementsByTagName("nav")[0].firstElementChild.style.color=`Red`
+
+        let main_nav = document.getElementsByTagName("nav")[0]
+        main_nav.getElementsByTagName("li")[1].style.color="green"
+        main_nav.getElementsByTagName("li")[2].style.color="blue"
+        document.getElementsByTagName("nav")[0].lastElementChild.style.color=`red`
+    </script>
+</body>
+</html>

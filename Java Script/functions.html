@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JS</title>
+</head>
+<body>
+    <h1 style="text-shadow: 1px 1px 2px ; display: flex; justify-content: center; " > open console to get the information </h1>
+
+    <script>
+// function for 1+ avg of x,y
+        // function avg(x,y){
+        //     return 1+(x+y)/2
+        // }
+        // let a=2;
+        // let b=4;
+        // let c=6;
+        // console.log(`1+(`+ a +`+`+b+`)/2 = `+ avg(a,b))
+        // console.log(`1+(`+ a +`+`+c+`)/2 = `+ avg(a,c))
+        // console.log(`1+(`+ b +`+`+c+`)/2 = `+ avg(b,c))
+
+        //OR 
+        const avg =(x,y)=>{
+            return 1+(x+y)/2
+        }
+        let a=2;
+        let b=4;
+        let c=6;
+        console.log(`1+(`+ a +`+`+b+`)/2 = `+ avg(a,b))
+        console.log(`1+(`+ a +`+`+c+`)/2 = `+ avg(a,c))
+        console.log(`1+(`+ b +`+`+c+`)/2 = `+ avg(b,c))
+
+ // for loop
+
+        // const marks={
+        //     Mohan:20,
+        //     Rohan:50,
+        //     Shonty:70
+        // }
+        // for(let i=0; i<Object.keys(marks).length; i++){
+
+        // console.log(Object.keys(marks)[i])
+        // console.log(marks[Object.keys(marks)[i]])
+        
+        // }
+        // console.log(marks)
+        // console.log(Object.keys(marks))
+
+        // or
+
+ //for in loop
+        const marks={
+            Mohan:20,
+            Rohan:50,
+            Shonty:70
+        }
+        for(let key in marks){
+            console.log(key)
+            console.log(marks[key])
+        
+        }
+// correct number 
+        let cn=2
+        let i
+        while(i!=cn){
+            console.log("try again")
+            i=prompt(`Enter crrect number`)
+            
+        }
+        console.log(`you have entered the correct no`)
+
+
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-shadow: 1px 1px 2px ; display: flex; justify-content: center; " > open console to get the information </h1>
+
+    <script>
+    // let product={
+    //     itemName:`soda`,
+    //     price:50,
+    //     discount:2,
+    //     code:`A05`
+
+    // }     
+    function myProduct(name,price,discount,code){
+        return{
+            itemName:name,
+            price:price,
+            discount:discount,
+            code:code,
+            discountValue:function(){
+                return price*discount/100;
+            }
+        }
+    }
+    
+    const VollyBall=myProduct(`Mikasa`,3000,20,`A02`);
+    const footBall=myProduct(`Nikey`,4000,30,`A09`);
+
+    </script>
+</body>
+</html>

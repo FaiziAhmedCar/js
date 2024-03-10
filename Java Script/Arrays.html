@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ARRAYS</title>
+</head>
+<body>
+    <h1 style="text-shadow: 1px 1px 2px ; display: flex; justify-content: center; " > open console to get the information </h1>
+
+    <script>
+        let arr=[1,2,3,false,"lol"]
+        console.log(arr[0])
+        console.log(arr[1])
+        console.log(arr[2])
+        console.log(arr[3])
+        console.log(arr[4])
+        console.log(arr[5])
+        console.log(arr[6]=6)
+        console.log(arr)
+        console.log(`length of the array=`,arr.length)
+
+        // methods
+
+        let a=[1,23,44,6,55]
+        let b=a.toString()//b is now a string 
+        console.log(b , typeof b)
+
+        let c=a.join("-")
+        console.log(c, typeof c)
+
+        let d=a.pop()
+        console.log(a , d) //d is a poped value 
+
+        // delete is an operator
+        let e=[1,23,44,6,55]
+        console.log(e)
+        console.log(e.length)
+        delete e[0]
+        console.log(e)
+        console.log(e.length, "length will be same ")
+
+        // sorting
+        let assending=(a,b)=>{
+            return a-b // b-a for dessending order 
+        }
+        let f=[1,23,44,6,55]
+        f.sort(assending)
+        console.log(f)
+
+
+
+    </script>
+</body>
+</html>

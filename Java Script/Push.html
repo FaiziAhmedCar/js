@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 style="text-shadow: 1px 1px 2px ; display: flex; justify-content: center; " > open console to get the information </h1>
+
+    <script>
+        let A=[1,2,3,4]
+        console.log(A)
+
+        
+        // Push
+        A.push(5)
+        console.log(A)
+
+
+        // Unshift
+        A.unshift(0)
+        console.log(A)
+
+        // Pop
+        A.pop()
+        console.log(A)
+
+        // Shift
+        A.shift()
+        console.log(A)
+
+        // Change
+        A[3]=5
+        console.log(A)
+// XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXX
+
+        // index Of the value    it search value 0 to end value
+        
+        console.log(A.indexOf(5)+" <- index value of 5")
+
+        console.log(A.indexOf(4)+"  <- -1 (value does not exsist)")
+
+        // lestIndex   it search value end value to initial value
+
+        console.log(A.lastIndexOf(2)+` <- index of 2`)
+
+//XXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXXx
+        // Obj incide the Array  by .find Method 
+
+        let charectors=[
+            {
+                name:`A`,
+                no:1
+            },{
+                name:`B`,
+                no:2
+            },{
+                name:`C`,
+                no:3
+            }
+        ]
+        console.log(charectors.find(function(element){
+            return element.name==="A"
+        }))
+                    //   OR by usin arrow function (=>)
+        
+        console.log(charectors.find(element => element.name==="B"))
+        
+    </script>
+</body>
+</html>

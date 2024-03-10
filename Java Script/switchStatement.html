@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+<h1 style="text-shadow: 1px 1px 2px ; display: flex; justify-content: center; " > open console to get the information of the fruit,that you want </h1> 
+
+</body>
+<script>
+    let fruitType=prompt("Enter name of the fruit that you want:")
+    switch(fruitType){
+
+        case 'apple':
+            console.log(`red apple is not available & green apple will cost you 15K/KG `)
+            break
+
+        case 'mango':
+            console.log(`Green mangos are not availale & Yellow mangos will cost you 20k/KG`)
+            break
+
+        default:
+            console.log(`${fruitType} is not available, we only have apple & mango that will cost you your kidney`)
+    }
+</script>
+</html>
