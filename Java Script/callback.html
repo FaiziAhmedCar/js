@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+</body>
+<script>
+    // function loadScript(src, callback){
+    //     let script = document.createElement('script');
+    //     script.src = src;
+    //     script.onload = ()=>{
+    //         console.log('script loaded '+ src);
+    //         callback();
+    //     }
+    //     script.onerror = ()=>{                          //in case of error in loading script  
+    //         console.log('script error '+ src);
+    //     }
+    //     document.body.appendChild(script);
+    // }
+    // function helloworld(){
+    //     console.log('hello world');
+    // }
+    // loadScript(`hellol.js`,helloworld)
+
+    function x(callback1,callback2){
+        callback1()                                               //calling the function y
+        callback2()                                               //calling the function z
+    console.log('hello world 3');
+    }
+
+    function y(){                                                  //defining the function y
+        console.log('hello world 1');
+    }
+
+    function z(){                                                  //defining the function z
+        console.log('hello world 2');
+    }
+
+    x(y,z)                                                       //calling the function x with y and z
+    
+</script>
+</html>

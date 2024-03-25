@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        .container{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: rgb(66, 235, 221);
+        }
+        .Time{
+            font-size: 50px;
+            font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            color: rgb(0, 0, 0);
+            text-shadow: 2px 2px 10px rgb(0, 0, 0);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="Time">
+
+        </div>
+    </div>
+</body>
+<script>
+    // let n = new Date();
+    // console.log(n)
+    // let seconds = n.getSeconds();
+    // let minutes = n.getMinutes();
+    // let hours = n.getHours();
+
+    // let day = n.getDay();
+    // let month = n.getMonth();
+    // let year = n.getFullYear(); 
+    setInterval(function(){
+        let n = new Date();
+        document.querySelector(".Time").innerHTML = n
+    },100)   
+
+</script>
+</html>
